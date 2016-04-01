@@ -1,0 +1,36 @@
+include ./_settings.jade
+html
+  head
+    include ./_head.jade
+  
+  body.content-page
+  
+    include ./_header.jade
+    
+    section#intro-box
+      h1
+        span Business
+        
+      .img-filter
+      .img-place-holder
+        img(src=stock_place)
+    
+    section.container
+      h2 myfotowall for business
+      
+        include ./_sharer.jade
+        
+      .main-content
+        p.intro-txt Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat vehicula orci, non porttitor risus euismod nec. Donec vitae libero eu tellus cursus aliquet a vel felis. Nam ullamcorper purus nec est facilisis, et mattis.
+        
+        hr
+        .row
+          .col-md-3
+            img('src="http://placehold.it/400x300" class="img-responsive" alt=""')  
+        
+          .col-md-9
+            img('src="http://placehold.it/1000x300" class="img-responsive" alt=""')
+
+    include ./_section-cta.jade
+        
+    include ./_footer.jade

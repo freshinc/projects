@@ -1,0 +1,38 @@
+header
+  .container
+    nav
+      
+      button(type="button",class="navbar-toggle collapsed",data-toggle="collapse",data-target="#topper-nav",aria-expanded="false")
+        span(class="sr-only") Toggle navigation
+        span(class="icon-bar")
+        span(class="icon-bar")
+        span(class="icon-bar")
+      
+      #logo
+        a(href='index.html')
+     
+      #topper-nav.collapse.navbar-collapse
+        ul.nav.navbar-nav
+          li
+            a(href='about.html') About us
+          li
+            a(href="galleries.html", class="dropdown", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false") Galleries 
+              span.caret
+            
+              ul.dropdown-menu
+                li
+                  a(href="image-gallery.html") Image Gallery
+                li
+                  a(href="examples-gallery.html") Example Gallery
+          li
+            a(href='faqs.html') FAQs
+          li
+            a(href='news.html') News
+          li
+            a(href='blog.html') Blog
+          li
+            a(href='contact.html') Contact us
+          
+      .home-side
+        | CALL: 01274 303153 
+        a(href=mfw_quote,class='btn') Order Now

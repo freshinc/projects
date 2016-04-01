@@ -1,0 +1,28 @@
+include ./_settings.jade
+html
+  head
+    include ./_head.jade
+  
+  body.content-page
+  
+    include ./_header.jade
+    
+    section#intro-box
+      h1
+        span Blog
+        
+      .img-filter
+      .img-place-holder
+        img(src=stock_place)
+    
+    section.container
+      h2 myfotowall blog
+      
+        include ./_sharer.jade
+        
+      .main-content
+        p.intro-txt Coming soon...
+
+    include ./_section-cta.jade
+        
+    include ./_footer.jade

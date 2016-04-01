@@ -1,0 +1,76 @@
+include ./_settings.jade
+html
+  head
+    include ./_head.jade
+  
+  body.content-page
+  
+    include ./_header.jade
+    
+    section#intro-box
+      h1
+        span FAQs
+        
+      .img-filter
+      .img-place-holder
+        img(src=stock_place)
+    
+    section.container
+      h2 Frequenty Asked Questions
+      
+        include ./_sharer.jade
+        
+      .main-content
+      
+        p.intro-txt Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat vehicula orci, non porttitor risus euismod nec. Donec vitae libero eu tellus cursus aliquet a vel felis. Nam ullamcorper purus nec est facilisis, et mattis lacus porta. Maecenas dolor ipsum, blandit a libero vel, pellentesque interdum nulla. 
+        
+        hr
+    
+        ul(class="nav nav-tabs", role="tablist")
+          li(role="presentation", class="active")
+            a(href="#general", aria-controls="general", role="tab", data-toggle="tab") General FAQs
+          li(role="presentation")
+            a(href="#technical", aria-controls="technical", role="tab", data-toggle="tab") Technical FAQs
+          
+      
+        .tab-content
+          .tab-pane.active#general(role="tabpanel")
+        
+            p.faq-title Q. How large can you print my digital photograph?
+            p  A. We can print your digital photograph, up to a maximum of 1600% (16x) larger, then the original printable size, with no discernible loss in printed quality.
+      
+            p.faq-title Q. How will I know how big a 1600% enlargement is?
+            p  A. By following the 'Order Here' instructions on the web site, you can choose your image and see how big your photograph will look in relation to your proposed wall size, without having to place an order.
+
+            p.faq-title Q. When hanging the myfotowall paper, is there a special type of paste that is required?
+            p  A. No special paste is required, however, to make hanging your myfotowall easier, we would recommend a premixed, fast drying paste.
+
+            p.faq-title Q. Can I hang my own 'myfotowall'?
+            p  A. Myfotowall wallpaper is specialist wallpaper product and we would always recommend that you use a professional decorator. We do however include an installation guide with every myfotowall.
+
+            p.faq-title Q. Can I wipe the surface of the wallpaper?
+            p  A. Yes, the surface can be wiped, once you have allowed the paper to dry out.
+
+            p.faq-title Q. What is the drying time of the myfotowall wallpaper?
+            p  A. Under normal room temperature conditions, the wallpaper will take two to three days to dry out.
+
+            p.faq-title Q. What do I used to wipe down the surface of the wallpaper?
+            p  A. Only wipe the wallpaper once the wallpaper is totally dry, 2-3 Days after being hung. Once dry, use a clean, no abrasive damp cloth, to gently cleanse the surface. Do not rub too hard on the surface, as this will result in the surface being removed.
+
+            p.faq-title Q. Will the picture fade?
+            p  A. The inks used to produce your myfotowall, are UV cured, and are lightfast for up to 3 years. This means that a myfotowall, hung in an internal room within a house, will last for at least 3 years without any fading.
+
+            p.faq-title Q. How do I install a myfotowall?
+            p  A. Every myfotowall, comes complete with an illustrated, installation guide. This easy to understand guide, takes you through each stage of how to hang your myfotowall.
+
+            p.faq-title Q. How good is the printed quality of a myfotowall?
+            p  A. The print quality is firstly determined by the quality of your original digital photograph. The enlargement will show no discernible loss in print quality, from that of the original printable quality, on a like for like printed resolution of 150dpi.
+          
+          .tab-pane#technical(role="tabpanel")
+        
+            h4 Q. Technical FAQs
+            p  A. coming soon...
+            
+    include ./_section-cta.jade
+    
+    include ./_footer.jade

@@ -1,0 +1,490 @@
+@import "../bourbon"
+
+$mfw-orange : #ff9501
+$mfw-black : #000
+$mfw-white : #fff
+$mfw-grey : #f3f3f3
+
+=absolute-all()
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  top: 0
+
+=background-opacity($color, $opacity: 0.3)
+  background: $color
+  background: rgba($color, $opacity)
+
+=border-radius($amount)
+  -moz-border-radius: $amount
+  -webkit-border-radius: $amount
+  border-radius: $amount
+  
+=box-shadow($y: 0px, $z: 2px, $blur: 4px, $color: rgba(0,0,0,0.1))
+  -moz-box-shadow: $y $z $blur $color !important
+  -webkit-box-shadow: $y $z $blur $color !important
+  box-shadow: $y $z $blur $color !important
+
+
+body
+
+  h1
+    font-size: 38px
+    font-weight: 600
+
+  h2
+    font-size: 38px
+    font-weight: 600
+
+  h3
+    font-size: 35px
+    font-weight: 600
+
+  p
+    font-size: 14px
+    
+  p.intro-txt
+    font-size: 22px !important
+    color: $mfw-orange
+
+  a
+    color: $mfw-orange
+    
+  a:hover
+    color: $mfw-black
+    text-decoration: none
+
+  .btn
+    background: $mfw-orange
+    border-radius: 0px
+    color: $mfw-white
+    text-transform: uppercase
+    font-size: 17px
+    font-weight: 600
+    padding: 10px 35px
+    +transition(all .5s)
+    
+  .btn:hover
+    background: $mfw-black
+    color: $mfw-white
+  
+  .icon-bar
+    background: $mfw-white
+  
+  span.orange
+    color: $mfw-orange
+  
+  .nav-tabs > li, .nav-pills > li
+    float: none
+    display: inline-block
+    *display: inline
+    zoom: 1
+
+  .nav-tabs, .nav-pills
+    text-align: center
+  
+  .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover, .nav-tabs>li>a
+    border-radius: 0
+    font-size: 18px
+   
+    
+  //
+  // Header
+  // 
+  
+  header
+    +box-shadow()
+    position: fixed
+    background: $mfw-white
+    width: 100%
+    z-index: 9999
+    @include linear-gradient(#fff, #f1f1f1)
+  
+    #logo
+      a
+        display: inline-block
+        margin: 20px 0
+        float: left
+        width: 133px
+        height: 55px
+        background: url('../images/logo.png')
+        background-repeat: no-repeat
+
+    #topper-nav
+      float: left
+
+    .nav
+      margin: 20px 0
+      float: left
+
+      a
+        font-size: 16px
+        font-weight: 600
+        
+    .home-side
+      float: right
+      margin: 20px 0
+      font-size: 16px
+      font-weight: 600
+            
+      .btn
+        margin-left: 10px
+      
+      
+  
+  //
+  // Hero Banner
+  //
+  
+  #hero-banner
+    overflow: hidden
+    padding: 235px 0 185px 0
+    text-align: center
+    background: $mfw-black
+    background-image: url('../images/hero.jpg')
+    background-size: cover
+    background-position: center center
+    
+    h1
+      color: $mfw-white
+      
+    p
+      margin: 0 auto
+      margin-bottom: 20px
+      font-size: 22px
+      font-weight: 300
+      width: 50%
+      color: $mfw-white
+    
+  
+      
+  
+  //
+  // MFW Gateway
+  //
+  
+  #mfw-gateway
+    padding-top: 30px
+    
+    h2
+      margin: 0 auto
+      margin-bottom: 30px
+      width: 50%
+      color: $mfw-orange
+      font-weight: 300
+      font-size: 26px
+      text-align: center
+    
+    .process-path
+      text-align: center
+      position: relative
+      
+      a.holder
+        position: relative
+        overflow: hidden
+        display: block
+        width: 100%
+        background: $mfw-black
+        color: $mfw-white
+        margin-bottom: 30px
+        height: 300px
+       
+        h3
+          font-size: 30px
+          z-index: 4
+          +absolute-all()
+          line-height: 7em
+          
+    
+      
+      .btn
+        max-width: 50%
+        display: inline-block
+        position: absolute
+        bottom: 50px
+        left: 30%
+        background: $mfw-orange
+        z-index: 3
+        
+      .btn:hover
+        background: $mfw-black
+    
+    .img-filter
+      +absolute-all()
+      z-index: 2
+      overflow: hidden
+      @include transition(all .5s)
+      +background-opacity($mfw-black, .6)
+    
+    img
+      width: 100%
+      +absolute-all()
+    
+    .process-path:hover
+      .img-filter
+        +background-opacity($mfw-black, .0)
+  
+  //
+  // MFW Sectors
+  //
+  
+  
+  #mfw-sectors
+    padding: 30px 0
+    border-top: 3px solid $mfw-grey
+  
+    h3
+      font-size: 20px
+  
+  
+  
+  
+  //
+  //  How it works
+  //
+  
+  #how-it-works
+    padding: 120px 0
+    background: $mfw-grey
+    text-align: center
+    
+    p
+      margin-bottom: 30px
+      font-size: 20px
+      font-weight: 300
+  
+    figure
+      background: $mfw-white
+      max-width: 250px
+      margin: 0 20px
+      padding-top: 25px
+      +box-shadow()
+  
+      i
+        margin: 0 auto
+        margin-bottom: 25px
+        width: 80px
+        height: 80px
+        background: $mfw-grey
+        display: block
+        +border-radius(100px)
+    
+      figcaption
+        padding: 20px
+        font-weight: 600
+        border-top: 1px solid #f1f1f1
+        font-size: 17px
+  
+  
+  
+  //
+  // CTA Section
+  //
+  
+  section#lifestyle-strip
+    div
+      padding: 0
+      margin: 0
+    img
+      width: 100%
+  
+  #cta-section
+    padding: 120px 0
+    background: $mfw-orange
+    background-image: url('../images/cta-bg.jpg')
+    background-position: center center
+    background-size: cover
+    text-align: center
+    color: $mfw-white
+    clear: both
+    
+    p
+      margin: 0 auto
+      margin-bottom: 30px
+      width: 50%
+      font-size: 20px
+      font-weight: 300
+  
+    .btn
+      background: $mfw-black
+      
+    .btn:hover
+      background: $mfw-white
+      color: $mfw-black
+
+  
+  
+  
+  
+  //
+  //  News & Blog
+  //
+  
+  #news-blog
+    padding: 60px 0
+    background: $mfw-black
+  
+    h4
+      font-size: 28px
+      font-weight: 600
+      color: $mfw-white
+    
+    article
+      color: $mfw-white
+      
+      h5
+        font-size: 18px
+      
+      p
+        font-size: 12px
+        
+      a:hover
+        color: $mfw-white
+        
+        
+        
+        
+  //
+  // Footer
+  //
+  
+  .footer-nav
+    padding: 50px 0
+    clear: both
+    
+    h4
+      font-weight: 600
+    
+    ul
+      list-style: none
+      padding: 0
+      margin: 0
+    
+    a
+      font-size: 13px
+  
+  footer
+    padding: 35px 0
+    background: $mfw-orange
+    
+    p
+      font-size: 13px
+    
+    a
+      color: $mfw-white
+      
+    a:hover
+      color: $mfw-black
+      
+    .spacer
+      display: inline-block
+      margin-right: 10px
+      border-right: 3px solid $mfw-white !important
+    
+    
+  
+  //
+  //  Content Pages
+  //
+    
+
+
+body.content-page
+
+  .main-content
+    margin-bottom: 40px
+    
+    p
+      font-size: 15px
+    
+    h3
+      font-size: 22px
+    
+    h4
+      font-size: 20px
+    
+    h5
+      font-size: 18px
+    
+    h6
+      font-size: 16px
+      
+      
+    .tab-pane
+      padding: 20px
+  
+  section#intro-box
+    position: relative
+    padding: 200px 0 150px 0
+    z-index: 0
+    background: $mfw-black
+    color: $mfw-white
+    text-align: center
+    
+    h1
+      position: relative
+      text-align: center
+      width: 100%
+      z-index: 9
+      
+      span
+        padding: 10px 20px 14px 20px
+        border: 5px solid $mfw-white
+        text-transform: lowercase
+    
+    .img-filter
+      +absolute-all()
+      z-index: 2
+      overflow: hidden
+      +background-opacity($mfw-black, .6)
+    
+    .img-place-holder
+      +absolute-all()
+      z-index: 1
+      overflow: hidden
+      
+      img
+        opacity: 1
+        width: 145%
+        margin-bottom: -20%
+        margin-left: -20%
+
+  h2
+    border-bottom: 1px solid $mfw-grey
+    margin-bottom: 30px
+    padding-bottom: 20px
+    clear: both
+    color: $mfw-orange
+    font-weight: 300
+
+  .social-share
+    float: right
+
+    a  
+      display: inline-block
+      width: 40px
+      margin-left: 20px
+      @include transition(all .5s)
+  
+    svg.icon-twitter
+      fill: #55ACEE
+  
+    svg.icon-facebook
+      fill: #3B5998
+  
+    a svg:hover
+      @include transition(all .5s)
+      fill: $mfw-orange
+
+
+
+  //
+  //  Gallery / Galleries
+  //
+
+  .thumb
+    img
+      margin-bottom: 30px
+
+

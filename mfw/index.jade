@@ -1,0 +1,109 @@
+include ./_settings.jade
+html
+  head
+    include ./_head.jade
+  
+  body
+  
+    include ./_header.jade
+      
+    section#hero-banner
+      
+      h1 Create something personal
+      p Take your favorite photo, and create your own wallpaper that's as unique as you are
+      p
+        a(href=mfw_quote, class="btn") Create your wall
+    
+    section#mfw-gateway.container
+    
+      h2 Simply upload your favorite photo, or pick from our library of images
+      
+      .process-path.col-md-6.box-upload
+        a(href=mfw_quote, class='holder')
+          .btn UPLOAD YOUR IMAGE
+          h3 Frame your memories...
+          .img-filter
+          img(src="images/pic-1.jpg")
+    
+      .process-path.col-md-6.box-gallery
+        a(href="image-gallery.html",class='holder')
+          .btn USE OUR GALLERY
+          h3 Be inspired...
+          .img-filter
+          img(src="images/pic-2.jpg")
+    
+    
+    include ./_sector-buckets.jade
+    
+    
+    section#how-it-works
+      .container
+        h3 How it works
+        p Four simple steps to enjoyment
+      
+        .col-md-3
+            figure
+              i(class="icon")
+              figcaption mywall
+              
+        .col-md-3
+            figure
+              i(class="icon")
+              figcaption myfoto
+              
+        .col-md-3
+            figure
+              i(class="icon")
+              figcaption mylook
+              
+        .col-md-3
+            figure
+              i(class="icon")
+              figcaption myfotowall
+    
+    
+    include ./_section-cta.jade
+
+    
+    section#news-blog
+      .container
+      
+        .col-md-6
+          h4 Latest News
+          
+          article
+            h5
+              a(href="#") We have launched our new website
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel tortor posuere, tempus augue non, tincidunt risus. Read more...
+            p By
+              a(href="#")  Stephen Armitage
+              |  |   31st January 2016
+          
+          article
+            h5
+              a(href="#") We have launched our new website
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel tortor posuere, tempus augue non, tincidunt risus. Read more...
+            p By
+              a(href="#")  Stephen Armitage
+              |  |   31st January 2016
+          
+        .col-md-6
+          h4 Latest from the Blog
+          
+          article
+            h5
+              a(href="#") We have launched our new website
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel tortor posuere, tempus augue non, tincidunt risus. Read more...
+            p By
+              a(href="#")  Stephen Armitage
+              |  |   31st January 2016
+          
+          article
+            h5
+              a(href="#") We have launched our new website
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel tortor posuere, tempus augue non, tincidunt risus. Read more...
+            p By
+              a(href="#")  Stephen Armitage
+              |  |   31st January 2016
+      
+    include ./_footer.jade
