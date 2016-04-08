@@ -14,7 +14,16 @@ header
       #topper-nav.collapse.navbar-collapse
         ul.nav.navbar-nav
           li
-            a(href='about.html') About us
+            a(href='about.html', class="dropdown", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false") About us
+              span.caret
+            
+              ul.dropdown-menu
+                li
+                  a(href="about.html") About us
+                li
+                  a(href="business.html") myfotowall for business
+                li
+                  a(href="bespoke.html") myfotowall bespoke
           li
             a(href="galleries.html", class="dropdown", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false") Galleries 
               span.caret

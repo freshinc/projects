@@ -55,18 +55,28 @@ body .icon-bar {
 body span.orange {
   color: #ff9501; }
 
-body .nav-tabs > li, body .nav-pills > li {
-  float: none;
-  display: inline-block;
-  *display: inline;
-  zoom: 1; }
-
-body .nav-tabs, body .nav-pills {
-  text-align: center; }
-
 body .nav-tabs > li.active > a, body .nav-tabs > li.active > a:focus, body .nav-tabs > li.active > a:hover, body .nav-tabs > li > a {
   border-radius: 0;
   font-size: 18px; }
+
+body .nav .open > a, body .nav .open > a:focus, body .nav .open > a:hover {
+  background: #fff;
+  color: #ff9501;
+  -webkit-transition: 0;
+  -moz-transition: 0;
+  transition: 0; }
+
+body .nav a:hover {
+  color: #ff9501; }
+
+body .dropdown-menu {
+  box-shadow: none;
+  border: none;
+  border-left: 2px solid #ff9501; }
+
+body .thumbnail {
+  border: 0;
+  padding: 0; }
 
 body header {
   -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1) !important;
@@ -109,7 +119,8 @@ body header {
     font-weight: 600;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
-    transition: 0.3s; }
+    transition: 0.3s;
+    color: #666; }
     body header .home-side .btn {
       margin-left: 10px;
       padding: 5px 10px; }
@@ -260,6 +271,9 @@ body #how-it-works {
     body #how-it-works figure:hover i {
       color: #fff; }
 
+body #how-it-works.landing-page {
+  padding: 20px 0 50px 0 !important; }
+
 body section#lifestyle-strip div {
   padding: 0;
   margin: 0; }
@@ -293,8 +307,9 @@ body #news-blog {
   background: #000; }
   body #news-blog h4 {
     font-size: 28px;
-    font-weight: 600;
-    color: #fff; }
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 30px; }
   body #news-blog article {
     color: #fff; }
     body #news-blog article h5 {
@@ -303,6 +318,13 @@ body #news-blog {
       font-size: 12px; }
     body #news-blog article a:hover {
       color: #fff; }
+
+body .news-item {
+  margin-bottom: 30px; }
+  body .news-item span.date {
+    color: #aaa;
+    font-weight: 300;
+    font-size: 15px; }
 
 body .footer-nav {
   padding: 20px 0;
@@ -340,7 +362,8 @@ body.content-page .address-text {
 body.content-page .main-content {
   margin-bottom: 40px; }
   body.content-page .main-content p {
-    font-size: 15px; }
+    font-size: 15px;
+    color: #666; }
   body.content-page .main-content h3 {
     font-size: 22px; }
   body.content-page .main-content h4 {
@@ -419,7 +442,8 @@ body.content-page .social-share {
   float: right; }
   body.content-page .social-share a {
     display: inline-block;
-    width: 40px;
+    width: 25px;
+    margin-top: 10px;
     margin-left: 20px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -434,8 +458,65 @@ body.content-page .social-share {
     transition: all 0.5s;
     fill: #ff9501; }
 
+body.content-page #cta-section {
+  padding: 30px 0; }
+
 body.content-page .thumb img {
   margin-bottom: 30px; }
+
+body.content-page * {
+  box-sizing: border-box !important; }
+
+body.content-page *:before {
+  box-sizing: border-box !important; }
+
+body.content-page *:after {
+  box-sizing: border-box !important; }
+
+body.content-page .masonry-row {
+  -moz-column-width: 18em;
+  -webkit-column-width: 18em;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em; }
+  body.content-page .masonry-row .item {
+    display: inline-block;
+    padding: .25rem;
+    width: 100%; }
+  body.content-page .masonry-row .well {
+    position: relative;
+    display: block;
+    background: #fff;
+    border-radius: 0;
+    -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1) !important;
+    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1) !important;
+    padding: 0; }
+    body.content-page .masonry-row .well h3,
+    body.content-page .masonry-row .well p {
+      padding: 0 20px; }
+    body.content-page .masonry-row .well h3 {
+      font-size: 18px;
+      font-weight: 300; }
+
+body.content-page .blog-column {
+  margin-top: 30px; }
+
+body.content-page .blog-column p.intro-txt {
+  font-size: 30px !important;
+  font-weight: 300; }
+
+body.content-page .blog-column p.details {
+  float: left;
+  color: #aaa; }
+
+body.content-page .blog-column hr {
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin: 10px 0 20px 0; }
+
+body.content-page .blog-column .social-share a {
+  width: 20px; }
 
 @media screen and (max-width: 767px) {
   body #hero-banner {

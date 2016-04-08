@@ -122,6 +122,15 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
+	"\/about.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/about.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/about.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -1693,17 +1702,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/bgs\/pexels-photo (1).jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.03541e+06,
-		"inputAbbreviatedPath": "\/images\/bgs\/pexels-photo (1).jpg",
-		"outputAbbreviatedPath": "\/images\/bgs\/pexels-photo (1).jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/bgs\/pexels-photo (2).jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1711,17 +1709,6 @@
 		"initialSize": 8.83119e+06,
 		"inputAbbreviatedPath": "\/images\/bgs\/pexels-photo (2).jpg",
 		"outputAbbreviatedPath": "\/images\/bgs\/pexels-photo (2).jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/bgs\/pexels-photo (3).jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 3.56799e+06,
-		"inputAbbreviatedPath": "\/images\/bgs\/pexels-photo (3).jpg",
-		"outputAbbreviatedPath": "\/images\/bgs\/pexels-photo (3).jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1777,6 +1764,28 @@
 		"initialSize": 7.24703e+06,
 		"inputAbbreviatedPath": "\/images\/bgs\/pexels-photo-66990.jpeg",
 		"outputAbbreviatedPath": "\/images\/bgs\/pexels-photo-66990.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/bgs\/pexels-photo-mountains.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.03541e+06,
+		"inputAbbreviatedPath": "\/images\/bgs\/pexels-photo-mountains.jpg",
+		"outputAbbreviatedPath": "\/images\/bgs\/pexels-photo-mountains.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/bgs\/pexels-photo-roof.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3.56799e+06,
+		"inputAbbreviatedPath": "\/images\/bgs\/pexels-photo-roof.jpg",
+		"outputAbbreviatedPath": "\/images\/bgs\/pexels-photo-roof.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2241,6 +2250,26 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/news-post.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/news-post.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/news-post.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/news-post.jade",
+		"outputAbbreviatedPath": "\/news-post.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
 	"\/news.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -2257,6 +2286,26 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/news.jade",
 		"outputAbbreviatedPath": "\/news.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/post.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/post.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/post.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/post.jade",
+		"outputAbbreviatedPath": "\/post.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0

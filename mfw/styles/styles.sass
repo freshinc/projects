@@ -5,7 +5,7 @@ $mfw-black : #000
 $mfw-white : #fff
 $mfw-grey : #f3f3f3
 $mfw-dark-grey : #666
-
+$mfw-light-grey : #aaa
 =absolute-all()
   position: absolute
   bottom: 0
@@ -87,19 +87,29 @@ body
   span.orange
     color: $mfw-orange
   
-  .nav-tabs > li, .nav-pills > li
-    float: none
-    display: inline-block
-    *display: inline
-    zoom: 1
 
-  .nav-tabs, .nav-pills
-    text-align: center
   
   .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover, .nav-tabs>li>a
     border-radius: 0
     font-size: 18px
-   
+
+  .nav .open>a, .nav .open>a:focus, .nav .open>a:hover
+    background: $mfw-white
+    color: $mfw-orange
+    @include transition(0)
+  
+  .nav a:hover 
+    color: $mfw-orange
+    
+  .dropdown-menu
+    box-shadow: none
+    border: none
+    border-left: 2px solid $mfw-orange
+  
+  .thumbnail
+    border: 0
+    padding: 0
+    
     
   //
   // Header
@@ -131,6 +141,7 @@ body
     .nav
       margin: 15px 0
       float: left
+      
       a
         font-size: 16px
         font-weight: 400
@@ -146,6 +157,7 @@ body
       font-size: 16px
       font-weight: 600
       @include transition(0.3s)
+      color: $mfw-dark-grey
             
       .btn
         margin-left: 10px
@@ -316,14 +328,17 @@ body
         font-weight: 600
         border-top: 1px solid #f1f1f1
         font-size: 17px
-  
+        
     figure:hover
       background: $mfw-orange
       color: $mfw-white
       
       i
         color: $mfw-white
-  
+        
+  #how-it-works.landing-page
+    padding: 20px 0 50px 0 !important
+  //  margin-bottom: 40px
   
   //
   // CTA Section
@@ -374,8 +389,9 @@ body
   
     h4
       font-size: 28px
-      font-weight: 600
+      font-weight: 300
       color: $mfw-white
+      margin-bottom: 30px
     
     article
       color: $mfw-white
@@ -389,7 +405,13 @@ body
       a:hover
         color: $mfw-white
         
-        
+  .news-item
+    margin-bottom: 30px
+  
+    span.date
+      color: $mfw-light-grey
+      font-weight: 300
+      font-size: 15px
         
         
   //
@@ -444,7 +466,6 @@ body
 
 
 body.content-page
-
   .address-text
     margin-top: 20px
 
@@ -453,6 +474,7 @@ body.content-page
     
     p
       font-size: 15px
+      color: $mfw-dark-grey
     
     h3
       font-size: 22px
@@ -540,7 +562,8 @@ body.content-page
 
     a  
       display: inline-block
-      width: 40px
+      width: 25px
+      margin-top: 10px
       margin-left: 20px
       @include transition(all .5s)
   
@@ -554,7 +577,8 @@ body.content-page
       @include transition(all .5s)
       fill: $mfw-orange
 
-
+  #cta-section
+    padding: 30px 0
 
   //
   //  Gallery / Galleries
@@ -563,8 +587,70 @@ body.content-page
   .thumb
     img
       margin-bottom: 30px
+
+  //
+  //  Blog / News
+  //
+  *
+    box-sizing: border-box !important
+    
+  *:before
+    box-sizing: border-box !important
+    
+  *:after
+    box-sizing: border-box !important
+
+
+  .masonry-row
+    -moz-column-width: 18em
+    -webkit-column-width: 18em
+    -moz-column-gap: 1em
+    -webkit-column-gap: 1em
+
+    .item
+      display: inline-block
+      padding: .25rem
+      width: 100%
+
+    .well
+      position: relative
+      display: block
+      background: $mfw-white
+      border-radius: 0
+      +box-shadow()
+      padding: 0
       
+      h3,
+      p
+        padding: 0 20px
+        
+      h3
+        font-size: 18px
+        font-weight: 300
+        
+  .blog-column
+    margin-top: 30px
+    
+  .blog-column
+    p.intro-txt
+      font-size: 30px !important
+      font-weight: 300
+    
+    p.details
+      float: left
+      color: $mfw-light-grey
       
+    hr
+      float: left
+      width: 100%
+      padding: 0
+      margin: 10px 0 20px 0
+      
+    .social-share
+    
+      a
+        width: 20px
+          
 @media screen and (max-width: 767px)
 
   body

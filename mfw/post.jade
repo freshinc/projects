@@ -1,0 +1,58 @@
+include ./_settings.jade
+html
+  head
+    include ./_head.jade
+  
+  body.content-page
+  
+    include ./_header.jade
+    
+    section#intro-box
+      h1
+        span Lorem ipsum dolor sit amet
+        
+      .img-filter
+      .img-place-holder
+        img(src="./images/bgs/photo-1452110040644-6751c0c95836.jpg")
+    
+    section.container
+        
+      .main-content.row
+        
+        .col-md-2.blog-column
+          p Article By
+            br
+            strong
+              a(href="#") Stephen Armitage
+          hr
+          p 12th October 2016
+          
+        .col-md-6.blog-column
+          
+          p.intro-txt Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quam magna, volutpat sed congue et, mattis vitae dui.
+          
+          p Aliquam scelerisque tincidunt laoreet. Integer imperdiet massa mauris, ut dictum magna interdum vel. Duis quam dolor, elementum et ipsum in, ullamcorper condimentum metus. Vivamus lorem odio, dapibus eget enim nec, pharetra luctus elit. Nam congue malesuada vestibulum. Integer ultricies accumsan efficitur.
+
+          p Praesent maximus urna ut bibendum bibendum. Donec sollicitudin lacus ligula, eget aliquet nisl eleifend at. Aenean condimentum felis non justo elementum porttitor. Duis id rhoncus nulla. Morbi magna dolor, pellentesque nec feugiat nec, fringilla id elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec quis pretium magna. Sed vel urna erat. Vivamus id nulla et neque finibus venenatis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum tempus lorem leo, sagittis pellentesque lectus euismod ac. Sed vitae ligula nec augue placerat sodales. Mauris nisl arcu, malesuada nec consequat sed, egestas a eros.
+
+          p Ut a sem maximus, cursus elit ac, posuere quam. Fusce vehicula arcu sem, vel eleifend eros tincidunt id. Quisque eu cursus ante. Nam facilisis, massa id commodo efficitur, turpis nisi gravida lectus, ac efficitur eros est non nibh. Aenean facilisis augue metus, eu cursus massa dictum aliquam. In vestibulum massa sit amet lobortis volutpat. Nullam vitae ornare libero. Maecenas auctor neque libero, in fermentum lacus pulvinar quis. Duis sodales cursus vehicula.
+
+          p Nam sem arcu, varius eleifend semper at, tincidunt vel ipsum. Praesent id lacus vitae mauris ultrices consequat. Suspendisse auctor feugiat massa, at porttitor nunc bibendum at. Donec lacus nisl, pretium eget libero sed, congue ultrices leo. Donec semper nisi at metus lacinia, non tristique orci suscipit. Aliquam ac nunc quam. Nullam eget porta diam.
+
+          p Aliquam placerat pretium velit quis auctor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer tincidunt tortor dignissim enim eleifend rhoncus. Nulla pulvinar purus ut urna consectetur, eget venenatis ligula consectetur. Nam convallis, libero ac ultrices pulvinar, lorem augue porttitor odio, id euismod urna dui eget quam. Maecenas consectetur augue eu volutpat rutrum. Sed vulputate justo non mi pellentesque lobortis. Curabitur lacinia mi velit, quis auctor quam lobortis at.
+
+          hr
+          
+          p.details Article by 
+            a(href="#") Stephen Armitage
+            |  | 12th October 2016
+            
+            include ./_sharer.jade
+          hr
+
+        .col-md-4.blog-column
+          img(src="./images/bgs/photo-1452110040644-6751c0c95836.jpg", class="img-responsive")
+    
+    include ./_image-strip.jade
+    
+    include ./_footer.jade

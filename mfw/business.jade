@@ -9,28 +9,91 @@ html
     
     section#intro-box
       h1
-        span Business
+        span myfotowall for business
         
       .img-filter
       .img-place-holder
-        img(src=stock_place)
+        img(src="./images/bgs/pexels-photo-mountains.jpg")
     
     section.container
-      h2 myfotowall for business
+      h2.text-center Giving businesses the wow factors
       
-        include ./_sharer.jade
-        
-      .main-content
-        p.intro-txt Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat vehicula orci, non porttitor risus euismod nec. Donec vitae libero eu tellus cursus aliquet a vel felis. Nam ullamcorper purus nec est facilisis, et mattis.
-        
-        hr
-        .row
-          .col-md-3
-            img('src="http://placehold.it/400x300" class="img-responsive" alt=""')  
-        
-          .col-md-9
-            img('src="http://placehold.it/1000x300" class="img-responsive" alt=""')
+      .main-content.row
+          
+        .col-md-6
+          p.intro-txt Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quam magna, volutpat sed congue et, mattis vitae dui.
 
+          p Ut a sem maximus, cursus elit ac, posuere quam. Fusce vehicula arcu sem, vel eleifend eros tincidunt id. Quisque eu cursus ante. Nam facilisis, massa id commodo efficitur, turpis nisi gravida lectus, ac efficitur eros est non nibh. Aenean facilisis augue metus, eu cursus massa dictum aliquam. In vestibulum massa sit amet lobortis volutpat. Nullam vitae ornare libero. Maecenas auctor neque libero, in fermentum lacus pulvinar quis. Duis sodales cursus vehicula.
+
+          p Nam sem arcu, varius eleifend semper at, tincidunt vel ipsum. Praesent id lacus vitae mauris ultrices consequat. Suspendisse auctor feugiat massa, at porttitor nunc bibendum at. Donec lacus nisl, pretium eget libero sed, congue ultrices leo. Donec semper nisi at metus lacinia, non tristique orci suscipit. Aliquam ac nunc quam. Nullam eget porta diam.
+
+          p
+            a(href="contact.html", class="btn") Get in touch
+          
+        .col-md-6
+          img(src="./images/bgs/pexels-photo-roof.jpg", class="img-responsive")
+            
+      .main-content.row
+      
+        .col-md-3.col-sm-3
+          a(href="./images/bgs/photo-1447877085163-3cce903855cd.jpg", class="thumbnail", ' data-gallery')
+            img(src="./images/bgs/photo-1447877085163-3cce903855cd.jpg", class="img-responsive")
+        .col-md-3.col-sm-3
+          a(href="./images/bgs/photo-1458324124043-7803d4fec380.jpg", class="thumbnail", ' data-gallery')
+            img(src="./images/bgs/photo-1458324124043-7803d4fec380.jpg", class="img-responsive")
+        .col-md-3.col-sm-3
+          a(href="./images/bgs/photo-1447958374760-1ce70cf11ee3.jpg", class="thumbnail", ' data-gallery')
+            img(src="./images/bgs/photo-1447958374760-1ce70cf11ee3.jpg", class="img-responsive")
+        .col-md-3.col-sm-3
+          a(href="./images/bgs/photo-1452110040644-6751c0c95836.jpg", class="thumbnail", ' data-gallery')
+            img(src="./images/bgs/photo-1452110040644-6751c0c95836.jpg", class="img-responsive")
+
+    section#how-it-works.landing-page
+      .container
+        h3 How it works
+        p We do everything for you simply provide us with dimentions and artwork
+      
+        .col-md-4
+            figure
+              i(class="material-icons") fullscreen
+              figcaption Supply Dimentions
+              
+        .col-md-4
+            figure
+              i(class="material-icons") photo
+              figcaption Supply Artwork
+              
+        .col-md-4
+            figure
+              i(class="material-icons") sentiment_very_satisfied
+              figcaption myfotowall
+                
+    #blueimp-gallery.blueimp-gallery
+      // The container for the modal slides
+      .slides
+      // Controls for the borderless lightbox
+      h3.title
+      a.prev &laquo;
+      a.next &raquo;
+      a.close &times;
+      a.play-pause
+      ol.indicator
+      // The modal dialog, which will be used to wrap the lightbox content
+      .modal.fade
+        .modal-dialog
+          .modal-content
+            .modal-header
+              button.close(type='button', aria-hidden='true') ×
+              h4.modal-title
+            .modal-body.next
+            .modal-footer
+              button.btn.btn-default.pull-left.prev(type='button')
+                i.glyphicon.glyphicon-chevron-left
+                |                         Previous
+              button.btn.btn-primary.next(type='button')
+                | Next
+                i.glyphicon.glyphicon-chevron-right   
+                
     include ./_section-cta.jade
         
     include ./_footer.jade
