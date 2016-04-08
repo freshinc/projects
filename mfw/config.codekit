@@ -122,15 +122,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/about.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/about.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/about.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -546,6 +537,15 @@
 		"processHTML": 0,
 		"randomFootnoteNumbers": 0,
 		"useCompatibilityMode": 0
+		},
+	"\/css\/bootstrap-image-gallery.min.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/bootstrap-image-gallery.min.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/css\/styles.css": {
 		"fileType": 16,
@@ -1638,6 +1638,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
+	"\/images\/backgrounds\/cliffs.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 171895,
+		"inputAbbreviatedPath": "\/images\/backgrounds\/cliffs.jpg",
+		"outputAbbreviatedPath": "\/images\/backgrounds\/cliffs.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/bgs\/a_mile.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1645,6 +1656,138 @@
 		"initialSize": 6.23264e+06,
 		"inputAbbreviatedPath": "\/images\/bgs\/a_mile.jpg",
 		"outputAbbreviatedPath": "\/images\/bgs\/a_mile.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/bgs\/bench-sea-sunny-man.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5.20758e+06,
+		"inputAbbreviatedPath": "\/images\/bgs\/bench-sea-sunny-man.jpg",
+		"outputAbbreviatedPath": "\/images\/bgs\/bench-sea-sunny-man.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/bgs\/landscape-sunset-red-water.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.70654e+07,
+		"inputAbbreviatedPath": "\/images\/bgs\/landscape-sunset-red-water.jpg",
+		"outputAbbreviatedPath": "\/images\/bgs\/landscape-sunset-red-water.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/bgs\/light-nature-sky-love.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.83598e+07,
+		"inputAbbreviatedPath": "\/images\/bgs\/light-nature-sky-love.jpg",
+		"outputAbbreviatedPath": "\/images\/bgs\/light-nature-sky-love.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/bgs\/pexels-photo (1).jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.03541e+06,
+		"inputAbbreviatedPath": "\/images\/bgs\/pexels-photo (1).jpg",
+		"outputAbbreviatedPath": "\/images\/bgs\/pexels-photo (1).jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/bgs\/pexels-photo (2).jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8.83119e+06,
+		"inputAbbreviatedPath": "\/images\/bgs\/pexels-photo (2).jpg",
+		"outputAbbreviatedPath": "\/images\/bgs\/pexels-photo (2).jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/bgs\/pexels-photo (3).jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3.56799e+06,
+		"inputAbbreviatedPath": "\/images\/bgs\/pexels-photo (3).jpg",
+		"outputAbbreviatedPath": "\/images\/bgs\/pexels-photo (3).jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/bgs\/pexels-photo (4).jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4.03668e+06,
+		"inputAbbreviatedPath": "\/images\/bgs\/pexels-photo (4).jpg",
+		"outputAbbreviatedPath": "\/images\/bgs\/pexels-photo (4).jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/bgs\/pexels-photo-24836.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3.762e+06,
+		"inputAbbreviatedPath": "\/images\/bgs\/pexels-photo-24836.jpg",
+		"outputAbbreviatedPath": "\/images\/bgs\/pexels-photo-24836.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/bgs\/pexels-photo-26970.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4.87775e+06,
+		"inputAbbreviatedPath": "\/images\/bgs\/pexels-photo-26970.jpg",
+		"outputAbbreviatedPath": "\/images\/bgs\/pexels-photo-26970.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/bgs\/pexels-photo-66990 (1).jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7.24703e+06,
+		"inputAbbreviatedPath": "\/images\/bgs\/pexels-photo-66990 (1).jpeg",
+		"outputAbbreviatedPath": "\/images\/bgs\/pexels-photo-66990 (1).jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/bgs\/pexels-photo-66990.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7.24703e+06,
+		"inputAbbreviatedPath": "\/images\/bgs\/pexels-photo-66990.jpeg",
+		"outputAbbreviatedPath": "\/images\/bgs\/pexels-photo-66990.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/bgs\/pexels-photo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.33667e+06,
+		"inputAbbreviatedPath": "\/images\/bgs\/pexels-photo.jpg",
+		"outputAbbreviatedPath": "\/images\/bgs\/pexels-photo.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1821,6 +1964,17 @@
 		"initialSize": 4.91323e+06,
 		"inputAbbreviatedPath": "\/images\/bgs\/photo-1458324124043-7803d4fec380.jpg",
 		"outputAbbreviatedPath": "\/images\/bgs\/photo-1458324124043-7803d4fec380.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/bgs\/skyline-buildings-new-york-skyscrapers.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9.34035e+06,
+		"inputAbbreviatedPath": "\/images\/bgs\/skyline-buildings-new-york-skyscrapers.jpg",
+		"outputAbbreviatedPath": "\/images\/bgs\/skyline-buildings-new-york-skyscrapers.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2076,6 +2230,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
+	"\/mfw-core.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/mfw-core.js",
+		"outputAbbreviatedPath": "\/min\/mfw-core-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/news.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -2117,6 +2282,17 @@
 		"randomFootnoteNumbers": 0,
 		"useCompatibilityMode": 0
 		},
+	"\/scripts\/bootstrap-image-gallery.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scripts\/bootstrap-image-gallery.min.js",
+		"outputAbbreviatedPath": "\/scripts\/min\/bootstrap-image-gallery.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/scripts\/main.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -2134,6 +2310,28 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/scripts\/main.min.js",
 		"outputAbbreviatedPath": "\/scripts\/min\/main.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/scripts\/mfw-core.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scripts\/mfw-core.js",
+		"outputAbbreviatedPath": "\/scripts\/min\/mfw-core-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/scripts\/min\/mfw-core-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scripts\/min\/mfw-core-min.js",
+		"outputAbbreviatedPath": "\/scripts\/min\/min\/mfw-core-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,

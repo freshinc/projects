@@ -2,8 +2,12 @@
 <html>
   <head>
     <title>myfotowall</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="styles/styles.css" rel="stylesheet"/>
+    <link href="./css/styles.css" rel="stylesheet"/>
+    <link href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css" rel="stylesheet"/>
+    <link href="./css/bootstrap-image-gallery.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
   </head>
   <body>
     <header>
@@ -36,27 +40,29 @@
     </section>
     <section id="mfw-gateway" class="container">
       <h2>Simply upload your favorite photo, or pick from our library of images</h2>
-      <div class="process-path col-md-6 box-upload"><a href="http://app.myfotowall.com/" class="holder">
-          <div class="btn">UPLOAD YOUR IMAGE</div>
-          <h3>Frame your memories...</h3>
-          <div class="img-filter"></div><img src="images/pic-1.jpg"/></a></div>
-      <div class="process-path col-md-6 box-gallery"><a href="image-gallery.html" class="holder">
-          <div class="btn">USE OUR GALLERY</div>
-          <h3>Be inspired...</h3>
-          <div class="img-filter"></div><img src="images/pic-2.jpg"/></a></div>
+      <div class="row">
+        <div class="process-path col-md-6 col-sm-6 box-upload"><a href="http://app.myfotowall.com/" class="holder">
+            <div class="btn">UPLOAD YOUR IMAGE</div>
+            <h3>Frame your memories...</h3>
+            <div class="img-filter"></div><img src="images/pic-1.jpg"/></a></div>
+        <div class="process-path col-md-6 col-sm-6 box-gallery"><a href="image-gallery.html" class="holder">
+            <h3>Be inspired...</h3>
+            <div class="btn">USE OUR GALLERY</div>
+            <div class="img-filter"> </div><img src="images/pic-2.jpg"/></a></div>
+      </div>
     </section>
     <section id="mfw-sectors" class="container">
-      <div class="mfw-sector col-md-4"><a href="http://app.myfotowall.com/"><img src="images/home.jpg" class="img-responsive"/></a>
+      <div class="mfw-sector col-md-4 col-sm-6"><a href="http://app.myfotowall.com/"><img src="images/home.jpg" class="img-responsive"/></a>
         <h3>myfotowall for  <span class="orange">you</span></h3>
         <p>Nam lectus mauris, dapibus et fringilla nec, lacinia id magna. Nunc id hendrerit nunc, eget scelerisque felis.</p>
         <p><a href="http://app.myfotowall.com/">Find out more...</a></p>
       </div>
-      <div class="mfw-sector col-md-4"><a href="business.html"><img src="images/show-room.jpg" class="img-responsive"/></a>
+      <div class="mfw-sector col-md-4 col-sm-6"><a href="business.html"><img src="images/show-room.jpg" class="img-responsive"/></a>
         <h3>myfotowall for <span class="orange">business</span></h3>
         <p>Nam lectus mauris, dapibus et fringilla nec, lacinia id magna. Nunc id hendrerit nunc, eget scelerisque felis.</p>
         <p><a href="business.html">Find out more...</a></p>
       </div>
-      <div class="mfw-sector col-md-4"><a href="bespoke.html"><img src="images/pool.jpg" class="img-responsive"/></a>
+      <div class="mfw-sector col-md-4 col-sm-6"><a href="bespoke.html"><img src="images/pool.jpg" class="img-responsive"/></a>
         <h3>myfotowall <span class="orange">bespoke</span></h3>
         <p>
           <Nam>lectus mauris, dapibus et fringilla nec, lacinia id magna. Nunc id hendrerit nunc, eget scelerisque felis.</Nam>
@@ -69,22 +75,22 @@
         <h3>How it works</h3>
         <p>Four simple steps to enjoyment</p>
         <div class="col-md-3">
-          <figure><i class="icon"></i>
+          <figure><i class="material-icons">build</i>
             <figcaption>mywall</figcaption>
           </figure>
         </div>
         <div class="col-md-3">
-          <figure><i class="icon"></i>
+          <figure><i class="material-icons">file_upload</i>
             <figcaption>myfoto</figcaption>
           </figure>
         </div>
         <div class="col-md-3">
-          <figure><i class="icon"></i>
+          <figure><i class="material-icons">open_with</i>
             <figcaption>mylook</figcaption>
           </figure>
         </div>
         <div class="col-md-3">
-          <figure><i class="icon"></i>
+          <figure><i class="material-icons">done</i>
             <figcaption>myfotowall</figcaption>
           </figure>
         </div>
@@ -157,7 +163,12 @@
       <div class="col-md-6">
         <h4>Keep informed</h4>
         <p>We appreciate your interest in myfotowall and would like to keep you in the picture, about what's new, exciting projects and ideas we can share.</p>
-        <p>[email-form]</p>
+        <form class="form-inline maillist">
+          <div class="form-group">
+            <input id="maillist-email" type="email" placeholder="you@where.com" class="form-control"/>
+          </div>
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
       </div>
     </section>
     <footer>
@@ -172,5 +183,7 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="./scripts/mfw-core.js"></script>
   </body>
 </html>

@@ -2,8 +2,12 @@
 <html>
   <head>
     <title>myfotowall</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="styles/styles.css" rel="stylesheet"/>
+    <link href="./css/styles.css" rel="stylesheet"/>
+    <link href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css" rel="stylesheet"/>
+    <link href="./css/bootstrap-image-gallery.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
   </head>
   <body class="content-page">
     <header>
@@ -90,7 +94,12 @@
       <div class="col-md-6">
         <h4>Keep informed</h4>
         <p>We appreciate your interest in myfotowall and would like to keep you in the picture, about what's new, exciting projects and ideas we can share.</p>
-        <p>[email-form]</p>
+        <form class="form-inline maillist">
+          <div class="form-group">
+            <input id="maillist-email" type="email" placeholder="you@where.com" class="form-control"/>
+          </div>
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
       </div>
     </section>
     <footer>
@@ -105,5 +114,7 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="./scripts/mfw-core.js"></script>
   </body>
 </html>

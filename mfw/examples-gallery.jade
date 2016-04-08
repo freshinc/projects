@@ -27,51 +27,36 @@ html
     section.container
     
       .row
-        .col-lg-4.col-md-4.col-xs-6.thumb
-          a('href="#" class="thumbnail')
-            img('src="http://placehold.it/400x300" class="img-responsive" alt=""')
-        .col-lg-4.col-md-4.col-xs-6.thumb
-          a('href="#" class="thumbnail')
-            img('src="http://placehold.it/400x300" class="img-responsive" alt=""')
-        .col-lg-4.col-md-4.col-xs-6.thumb
-          a('href="#" class="thumbnail')
-            img('src="http://placehold.it/400x300" class="img-responsive" alt=""')
-        .col-lg-4.col-md-4.col-xs-6.thumb
-          a('href="#" class="thumbnail')
-            img('src="http://placehold.it/400x300" class="img-responsive" alt=""')
-        .col-lg-4.col-md-4.col-xs-6.thumb
-          a('href="#" class="thumbnail')
-            img('src="http://placehold.it/400x300" class="img-responsive" alt=""')
-        .col-lg-4.col-md-4.col-xs-6.thumb
-          a('href="#" class="thumbnail')
-            img('src="http://placehold.it/400x300" class="img-responsive" alt=""')
-        .col-lg-4.col-md-4.col-xs-6.thumb
-          a('href="#" class="thumbnail')
-            img('src="http://placehold.it/400x300" class="img-responsive" alt=""')
-        .col-lg-4.col-md-4.col-xs-6.thumb
-          a('href="#" class="thumbnail')
-            img('src="http://placehold.it/400x300" class="img-responsive" alt=""')
-        .col-lg-4.col-md-4.col-xs-6.thumb
-          a('href="#" class="thumbnail')
-            img('src="http://placehold.it/400x300" class="img-responsive" alt=""')
-        .col-lg-4.col-md-4.col-xs-6.thumb
-          a('href="#" class="thumbnail')
-            img('src="http://placehold.it/400x300" class="img-responsive" alt=""')
-        .col-lg-4.col-md-4.col-xs-6.thumb
-          a('href="#" class="thumbnail')
-            img('src="http://placehold.it/400x300" class="img-responsive" alt=""')
-        .col-lg-4.col-md-4.col-xs-6.thumb
-          a('href="#" class="thumbnail')
-            img('src="http://placehold.it/400x300" class="img-responsive" alt=""')
-        .col-lg-4.col-md-4.col-xs-6.thumb
-          a('href="#" class="thumbnail')
-            img('src="http://placehold.it/400x300" class="img-responsive" alt=""')
-        .col-lg-4.col-md-4.col-xs-6.thumb
-          a('href="#" class="thumbnail')
-            img('src="http://placehold.it/400x300" class="img-responsive" alt=""')
-        .col-lg-4.col-md-4.col-xs-6.thumb
-          a('href="#" class="thumbnail')
-            img('src="http://placehold.it/400x300" class="img-responsive" alt=""')
+        .col-md-12
+          #carousel-example-generic.carousel.slide(data-ride='carousel')
+
+            ol.carousel-indicators
+              li.active(data-target='#carousel-example-generic', data-slide-to='0')
+              li(data-target='#carousel-example-generic', data-slide-to='1')
+              li(data-target='#carousel-example-generic', data-slide-to='2')
+
+            .carousel-inner(role='listbox')
+              .item.active
+                img(src='./images/bgs/tumblr_o4qkpj3AvJ1slhhf0o1_1280.jpg', alt='...')
+                .carousel-caption
+                  | ...
+              .item
+                img(src='./images/bgs/tumblr_o3z5teg2Ub1slhhf0o1_1280.jpg', alt='...')
+                .carousel-caption
+                  | ...
+              .item
+                img(src='./images/bgs/tumblr_o4qkpj3AvJ1slhhf0o1_1280.jpg', alt='...')
+                .carousel-caption
+                  | ...
+
+            a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
+             span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+             span.sr-only Previous
+            a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
+              span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+              span.sr-only Next
+            
+          hr
             
     include ./_section-cta.jade
     

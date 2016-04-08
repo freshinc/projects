@@ -1,0 +1,1 @@
+$(window).scroll(function(){var e=$(window).scrollTop();e>100?$("header").addClass("mini-me"):$("header").removeClass("mini-me")});

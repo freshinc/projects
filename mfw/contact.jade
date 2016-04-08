@@ -30,23 +30,18 @@ html
           .col-md-6
           
             .form-group
-              label Name*
-              input(type="text", class="form-control", placeholder="Text input")
+              input(type="text", class="form-control", placeholder="Name")
             .form-group
-              label Contact Number*
-              input(type="text", class="form-control", placeholder="Text input")
+              input(type="text", class="form-control", placeholder="Contact Number")
             .form-group
-              label Address*
-              input(type="text", class="form-control", placeholder="Text input")
+              input(type="text", class="form-control", placeholder="Address")
             .form-group
-              label Email Address*
-              input(type="text", class="form-control", placeholder="Text input")
+              input(type="text", class="form-control", placeholder="Email Address")
             .form-group
-              label Postcode*
-              input(type="text", class="form-control", placeholder="Text input")
+              input(type="text", class="form-control", placeholder="Postcode")
             .form-group
-              label Message:
-              textarea.form-control(rows=4)
+              textarea(placeholder="Address", rows="4").form-control
+              input(type="submit", style="margin-top: 20px;").form-control
 
           .col-md-6
         
@@ -57,9 +52,10 @@ html
               a(href='https://mapswebsite.org/') google maps widget
               script(type='text/javascript', src='https://embedmaps.com/google-maps-authorization/script.js?id=37f3e1dce48f2ddae9c89dbfba938788aa2f7d29')
               script(type='text/javascript') function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(51.6789,-3.3805999999999585),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(51.6789,-3.3805999999999585)});infowindow = new google.maps.InfoWindow({content:'<strong></strong><br><br>BD5 9AG <br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
-          
-            p Myfotowall LLP, Carrwood House, Carrbottom Road, Bradford, West Yorkshire, BD5 9AG, England
-            p Customer Service Tel: +44 1274 303153
+
+            .address-text
+              p Myfotowall LLP, Carrwood House, Carrbottom Road, Bradford, West Yorkshire, BD5 9AG, England
+              p Customer Service Tel: +44 1274 303153
 
     
     include ./_section-cta.jade

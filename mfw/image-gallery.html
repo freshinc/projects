@@ -2,8 +2,12 @@
 <html>
   <head>
     <title>myfotowall</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="styles/styles.css" rel="stylesheet"/>
+    <link href="./css/styles.css" rel="stylesheet"/>
+    <link href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css" rel="stylesheet"/>
+    <link href="./css/bootstrap-image-gallery.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
   </head>
   <body class="content-page">
     <header>
@@ -47,23 +51,40 @@
       <p class="intro-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat vehicula orci, non porttitor risus euismod nec. Donec vitae libero eu tellus cursus aliquet a vel felis. Nam ullamcorper purus nec est facilisis, et mattis</p>
       <hr/>
     </section>
+    <div id="blueimp-gallery" class="blueimp-gallery">
+      <!-- The container for the modal slides-->
+      <div class="slides"></div>
+      <!-- Controls for the borderless lightbox-->
+      <h3 class="title"></h3><a class="prev">&laquo;</a><a class="next">&raquo;</a><a class="close">&times;</a><a class="play-pause"></a>
+      <ol class="indicator"></ol>
+      <!-- The modal dialog, which will be used to wrap the lightbox content-->
+      <div class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" aria-hidden="true" class="close">×</button>
+              <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body next"></div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default pull-left prev"><i class="glyphicon glyphicon-chevron-left"></i>                        Previous</button>
+              <button type="button" class="btn btn-primary next">Next<i class="glyphicon glyphicon-chevron-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <section class="container">
       <div class="row">
-        <div class="col-lg-4 col-md-4 col-xs-6 thumb"><a href="#" class="thumbnail="href="#" class="thumbnail"><img src="http://placehold.it/400x300" class="img-responsive" alt="="src="http://placehold.it/400x300" class="img-responsive" alt=""/></a></div>
-        <div class="col-lg-4 col-md-4 col-xs-6 thumb"><a href="#" class="thumbnail="href="#" class="thumbnail"><img src="http://placehold.it/400x300" class="img-responsive" alt="="src="http://placehold.it/400x300" class="img-responsive" alt=""/></a></div>
-        <div class="col-lg-4 col-md-4 col-xs-6 thumb"><a href="#" class="thumbnail="href="#" class="thumbnail"><img src="http://placehold.it/400x300" class="img-responsive" alt="="src="http://placehold.it/400x300" class="img-responsive" alt=""/></a></div>
-        <div class="col-lg-4 col-md-4 col-xs-6 thumb"><a href="#" class="thumbnail="href="#" class="thumbnail"><img src="http://placehold.it/400x300" class="img-responsive" alt="="src="http://placehold.it/400x300" class="img-responsive" alt=""/></a></div>
-        <div class="col-lg-4 col-md-4 col-xs-6 thumb"><a href="#" class="thumbnail="href="#" class="thumbnail"><img src="http://placehold.it/400x300" class="img-responsive" alt="="src="http://placehold.it/400x300" class="img-responsive" alt=""/></a></div>
-        <div class="col-lg-4 col-md-4 col-xs-6 thumb"><a href="#" class="thumbnail="href="#" class="thumbnail"><img src="http://placehold.it/400x300" class="img-responsive" alt="="src="http://placehold.it/400x300" class="img-responsive" alt=""/></a></div>
-        <div class="col-lg-4 col-md-4 col-xs-6 thumb"><a href="#" class="thumbnail="href="#" class="thumbnail"><img src="http://placehold.it/400x300" class="img-responsive" alt="="src="http://placehold.it/400x300" class="img-responsive" alt=""/></a></div>
-        <div class="col-lg-4 col-md-4 col-xs-6 thumb"><a href="#" class="thumbnail="href="#" class="thumbnail"><img src="http://placehold.it/400x300" class="img-responsive" alt="="src="http://placehold.it/400x300" class="img-responsive" alt=""/></a></div>
-        <div class="col-lg-4 col-md-4 col-xs-6 thumb"><a href="#" class="thumbnail="href="#" class="thumbnail"><img src="http://placehold.it/400x300" class="img-responsive" alt="="src="http://placehold.it/400x300" class="img-responsive" alt=""/></a></div>
-        <div class="col-lg-4 col-md-4 col-xs-6 thumb"><a href="#" class="thumbnail="href="#" class="thumbnail"><img src="http://placehold.it/400x300" class="img-responsive" alt="="src="http://placehold.it/400x300" class="img-responsive" alt=""/></a></div>
-        <div class="col-lg-4 col-md-4 col-xs-6 thumb"><a href="#" class="thumbnail="href="#" class="thumbnail"><img src="http://placehold.it/400x300" class="img-responsive" alt="="src="http://placehold.it/400x300" class="img-responsive" alt=""/></a></div>
-        <div class="col-lg-4 col-md-4 col-xs-6 thumb"><a href="#" class="thumbnail="href="#" class="thumbnail"><img src="http://placehold.it/400x300" class="img-responsive" alt="="src="http://placehold.it/400x300" class="img-responsive" alt=""/></a></div>
-        <div class="col-lg-4 col-md-4 col-xs-6 thumb"><a href="#" class="thumbnail="href="#" class="thumbnail"><img src="http://placehold.it/400x300" class="img-responsive" alt="="src="http://placehold.it/400x300" class="img-responsive" alt=""/></a></div>
-        <div class="col-lg-4 col-md-4 col-xs-6 thumb"><a href="#" class="thumbnail="href="#" class="thumbnail"><img src="http://placehold.it/400x300" class="img-responsive" alt="="src="http://placehold.it/400x300" class="img-responsive" alt=""/></a></div>
-        <div class="col-lg-4 col-md-4 col-xs-6 thumb"><a href="#" class="thumbnail="href="#" class="thumbnail"><img src="http://placehold.it/400x300" class="img-responsive" alt="="src="http://placehold.it/400x300" class="img-responsive" alt=""/></a></div>
+        <div class="col-lg-4 col-md-4 col-xs-6 thumb"><a href="./images/bgs/photo-1447877085163-3cce903855cd.jpg" class="thumbnail="href="./images/bgs/photo-1447877085163-3cce903855cd.jpg" class="thumbnail" ="" data-gallery="data-gallery"><img src="./images/bgs/photo-1447877085163-3cce903855cd.jpg" class="img-responsive" alt="Banana="src="./images/bgs/photo-1447877085163-3cce903855cd.jpg" class="img-responsive" alt="Banana"/></a></div>
+        <div class="col-lg-4 col-md-4 col-xs-6 thumb"><a href="./images/bgs/photo-1447958374760-1ce70cf11ee3.jpg" class="thumbnail="href="./images/bgs/photo-1447958374760-1ce70cf11ee3.jpg" class="thumbnail" ="" data-gallery="data-gallery"><img src="./images/bgs/photo-1447958374760-1ce70cf11ee3.jpg" class="img-responsive" alt="="src="./images/bgs/photo-1447958374760-1ce70cf11ee3.jpg" class="img-responsive" alt=""/></a></div>
+        <div class="col-lg-4 col-md-4 col-xs-6 thumb"><a href="./images/bgs/photo-1449960238630-7e720e630019.jpg" class="thumbnail="href="./images/bgs/photo-1449960238630-7e720e630019.jpg" class="thumbnail" ="" data-gallery="data-gallery"><img src="./images/bgs/photo-1449960238630-7e720e630019.jpg" class="img-responsive" alt="="src="./images/bgs/photo-1449960238630-7e720e630019.jpg" class="img-responsive" alt=""/></a></div>
+        <div class="col-lg-4 col-md-4 col-xs-6 thumb"><a href="./images/bgs/photo-1452110040644-6751c0c95836.jpg" class="thumbnail="href="./images/bgs/photo-1452110040644-6751c0c95836.jpg" class="thumbnail" ="" data-gallery="data-gallery"><img src="./images/bgs/photo-1452110040644-6751c0c95836.jpg" class="img-responsive" alt="="src="./images/bgs/photo-1452110040644-6751c0c95836.jpg" class="img-responsive" alt=""/></a></div>
+        <div class="col-lg-4 col-md-4 col-xs-6 thumb"><a href="./images/bgs/photo-1458324124043-7803d4fec380.jpg" class="thumbnail="href="./images/bgs/photo-1458324124043-7803d4fec380.jpg" class="thumbnail" ="" data-gallery="data-gallery"><img src="./images/bgs/photo-1458324124043-7803d4fec380.jpg" class="img-responsive" alt="="src="./images/bgs/photo-1458324124043-7803d4fec380.jpg" class="img-responsive" alt=""/></a></div>
+        <div class="col-lg-4 col-md-4 col-xs-6 thumb"><a href="./images/bgs/photo-1447877085163-3cce903855cd.jpg" class="thumbnail="href="./images/bgs/photo-1447877085163-3cce903855cd.jpg" class="thumbnail" ="" data-gallery="data-gallery"><img src="./images/bgs/photo-1447877085163-3cce903855cd.jpg" class="img-responsive" alt="="src="./images/bgs/photo-1447877085163-3cce903855cd.jpg" class="img-responsive" alt=""/></a></div>
+        <div class="col-lg-4 col-md-4 col-xs-6 thumb"><a href="./images/bgs/photo-1447958374760-1ce70cf11ee3.jpg" class="thumbnail="href="./images/bgs/photo-1447958374760-1ce70cf11ee3.jpg" class="thumbnail" ="" data-gallery="data-gallery"><img src="./images/bgs/photo-1447958374760-1ce70cf11ee3.jpg" class="img-responsive" alt="="src="./images/bgs/photo-1447958374760-1ce70cf11ee3.jpg" class="img-responsive" alt=""/></a></div>
+        <div class="col-lg-4 col-md-4 col-xs-6 thumb"><a href="./images/bgs/photo-1449960238630-7e720e630019.jpg" class="thumbnail="href="./images/bgs/photo-1449960238630-7e720e630019.jpg" class="thumbnail" ="" data-gallery="data-gallery"><img src="./images/bgs/photo-1449960238630-7e720e630019.jpg" class="img-responsive" alt="="src="./images/bgs/photo-1449960238630-7e720e630019.jpg" class="img-responsive" alt=""/></a></div>
+        <div class="col-lg-4 col-md-4 col-xs-6 thumb"><a href="./images/bgs/photo-1452110040644-6751c0c95836.jpg" class="thumbnail="href="./images/bgs/photo-1452110040644-6751c0c95836.jpg" class="thumbnail" ="" data-gallery="data-gallery"><img src="./images/bgs/photo-1452110040644-6751c0c95836.jpg" class="img-responsive" alt="="src="./images/bgs/photo-1452110040644-6751c0c95836.jpg" class="img-responsive" alt=""/></a></div>
       </div>
     </section>
     <section id="lifestyle-strip">
@@ -103,7 +124,12 @@
       <div class="col-md-6">
         <h4>Keep informed</h4>
         <p>We appreciate your interest in myfotowall and would like to keep you in the picture, about what's new, exciting projects and ideas we can share.</p>
-        <p>[email-form]</p>
+        <form class="form-inline maillist">
+          <div class="form-group">
+            <input id="maillist-email" type="email" placeholder="you@where.com" class="form-control"/>
+          </div>
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
       </div>
     </section>
     <footer>
@@ -118,5 +144,7 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="./scripts/mfw-core.js"></script>
   </body>
 </html>

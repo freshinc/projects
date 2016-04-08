@@ -27,7 +27,12 @@ section.footer-nav.container
   .col-md-6
     h4 Keep informed
     p We appreciate your interest in myfotowall and would like to keep you in the picture, about what's new, exciting projects and ideas we can share.
-    p [email-form]
+    
+    form.form-inline.maillist
+      .form-group
+        input#maillist-email.form-control(type='email', placeholder='you@where.com')
+      button.btn(type='submit') Subscribe
+
 
 
 
@@ -47,3 +52,5 @@ footer
         
 script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js")
 script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
+script(src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js")
+script(src="./scripts/mfw-core.js")

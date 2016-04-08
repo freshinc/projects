@@ -18,19 +18,21 @@ html
     
       h2 Simply upload your favorite photo, or pick from our library of images
       
-      .process-path.col-md-6.box-upload
-        a(href=mfw_quote, class='holder')
-          .btn UPLOAD YOUR IMAGE
-          h3 Frame your memories...
-          .img-filter
-          img(src="images/pic-1.jpg")
+      .row
+      
+        .process-path.col-md-6.col-sm-6.box-upload
+          a(href=mfw_quote, class='holder')
+            .btn UPLOAD YOUR IMAGE
+            h3 Frame your memories...
+            .img-filter
+            img(src="images/pic-1.jpg")
     
-      .process-path.col-md-6.box-gallery
-        a(href="image-gallery.html",class='holder')
-          .btn USE OUR GALLERY
-          h3 Be inspired...
-          .img-filter
-          img(src="images/pic-2.jpg")
+        .process-path.col-md-6.col-sm-6.box-gallery
+          a(href="image-gallery.html",class='holder')
+            h3 Be inspired...
+            .btn USE OUR GALLERY
+            .img-filter 
+            img(src="images/pic-2.jpg")
     
     
     include ./_sector-buckets.jade
@@ -43,22 +45,22 @@ html
       
         .col-md-3
             figure
-              i(class="icon")
+              i(class="material-icons") build
               figcaption mywall
               
         .col-md-3
             figure
-              i(class="icon")
+              i(class="material-icons") file_upload
               figcaption myfoto
               
         .col-md-3
             figure
-              i(class="icon")
+              i(class="material-icons") open_with
               figcaption mylook
               
         .col-md-3
             figure
-              i(class="icon")
+              i(class="material-icons") done
               figcaption myfotowall
     
     

@@ -13,19 +13,22 @@ html
         
       .img-filter
       .img-place-holder
-        img(src=stock_place)
+        img(src="./images/backgrounds/cliffs.jpg")
     
     section.container
       h2 All about myfotowall
       
         include ./_sharer.jade
         
-      .main-content
-        p.intro-txt myfotowall has been created to give everyone the ability to create something really amazing with a digital photograph by converting it into a life size photo-wall covering, that can change the look and feel of any room, creating a lasting and dynamic wall scape of your photograph.
+      .main-content.row
+        .col-md-6
+          p.intro-txt myfotowall has been created to give everyone the ability to create something really amazing with a digital photograph by converting it into a life size photo-wall covering, that can change the look and feel of any room, creating a lasting and dynamic wall scape of your photograph.
 
-        p There are millions and millions of digital photographs that are being taken, every hour, of every day throughout the world and every now and then, we all take that perfect photo that deserves to be more than just another image, in your image library.
+          p There are millions and millions of digital photographs that are being taken, every hour, of every day throughout the world and every now and then, we all take that perfect photo that deserves to be more than just another image, in your image library.
 
-        p myfotowall is at the forefront of this next generation of websites that engages the imagination and creativeness of the website visitor. Our style of website is called a 'User Participation Website' (UPW for short) allowing you to interact and control the functionality of the website as if it were an application on your desktop PC.
+          p myfotowall is at the forefront of this next generation of websites that engages the imagination and creativeness of the website visitor. Our style of website is called a 'User Participation Website' (UPW for short) allowing you to interact and control the functionality of the website as if it were an application on your desktop PC.
+        .col-md-6
+          img(src="./images/bgs/photo-1458324124043-7803d4fec380.jpg", class="img-responsive")
 
     include ./_sector-buckets.jade
     

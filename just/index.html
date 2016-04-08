@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>We are Stronger Together | JustUs.co</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+		<style>
+			body {
+				text-align: center;
+				background: url(img/bg.jpg) center top no-repeat;
+				font-family: 'Merriweather', serif;
+			}
+			
+			a {
+				color: #487d8e;
+			}
+			
+			h1 {
+				margin: 0;
+				padding: 0;
+				font-size: 38px;
+				letter-spacing: 0;
+			}
+			
+			h2 {
+				margin: 15px 0;
+				padding: 0;
+				font-size: 20px;
+				font-weight: normal;
+				line-height: 40px;
+				letter-spacing: 0;
+				margin-bottom: 30px;
+			}
+			
+				h2 i {
+					font-weight: bold;
+				}
+			
+			h3 {
+				margin-bottom: 20px;
+				font-size: 22px;
+				font-weight: bold;
+			}
+			
+			.wrapper {
+				max-width: 740px;
+				margin: 0 auto;
+			}
+			
+				#logo {
+					width: 190px;
+					margin: 0 auto;
+					padding: 40px 0;
+					position: relative;
+				}
+				
+					.tm {
+						position: absolute;
+						right: 0;
+						font-size: 8px;
+						font-weight: bold;
+					}
+				
+				
+				img {
+					width: 100%;
+					max-width: 622px !important;
+				}
+				
+				form {
+					font-family: arial;
+					margin-bottom: 30px;
+				}
+				
+					.btn {
+						width: 100%;
+						background: #db7b4b;
+						color: #fff;
+						font-weight: bold;
+						text-transform: uppercase;
+						letter-spacing: 2px;
+						font-size: 13px;
+						border-radius: 0;
+						transition: all 0.3s;
+					}
+					
+						.btn:hover {
+							color: #fff;
+							background: #487d8e;
+							cursor: pointer;
+						}
+				
+				.footer-txt {
+					font-size: 12px;
+					line-height: 1.5em;
+					color: #999;
+					padding: 0 20px;
+				}
+				
+
+select.custom {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20fill%3D%22%23555555%22%20%0A%09%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%22-261%20145.2%2024%2024%22%20style%3D%22enable-background%3Anew%20-261%20145.2%2024%2024%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cpath%20d%3D%22M-245.3%2C156.1l-3.6-6.5l-3.7%2C6.5%20M-252.7%2C159l3.7%2C6.5l3.6-6.5%22%2F%3E%0A%3C%2Fsvg%3E");
+  padding-right: 25px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+select.custom::-ms-expand {
+  display: none;
+}
+
+		#isa-holder {
+			display: none;
+			margin-top: -30px;
+		}
+			.column {
+				display: block;
+				width: 33%;
+				float: left;
+				padding: 20px;
+				text-align: center;
+				font-size: 20px;
+			}
+			
+				.column span {
+					font-size: 10px;
+					letter-spacing: 6px;	
+					display: block;
+				}
+				
+			#isa-holder .arrow-up {
+				border-bottom: 10px solid #487d8e;
+				margin-left: 27.5%;
+			}
+			
+			.isa-shares {
+				border-radius: 3px;
+				background: #487d8e;
+				padding: 10px;
+				color: #fff;
+				font-size: 14px;
+				margin: 0 20px;
+				margin-bottom: 10px;
+				float: left;
+				width: 100%;
+			}
+
+		#eis-holder {
+			display: none;
+			margin-top: -30px;
+		}
+			
+			#eis-holder .arrow-up {
+				border-bottom: 10px solid #db7b4b;
+				margin-left: 71%;
+			}
+		
+			.eis-shares {
+				border-radius: 3px;
+				background: #db7b4b;
+				padding: 10px;
+				color: #fff;
+				font-size: 14px;
+				margin: 0 20px;
+				margin-bottom: 10px;
+			}
+			
+			.arrow-up {
+				width: 0; 
+				height: 0; 
+				border-left: 10px solid transparent;
+				border-right: 10px solid transparent;
+			}
+			
+			.img-holder {
+				position: relative;
+			}	
+			
+				.img-holder #box-1 {
+					position: absolute;
+					width: 25%;
+					height: 80%;
+					left: 16%;	
+					cursor: pointer;
+				}
+			
+				.img-holder #box-2 {
+					position: absolute;
+					width: 25%;
+					height: 80%;
+					left: 60%;
+					cursor: pointer;
+				}
+				
+				
+				
+			@media only screen and (max-width: 768px) {
+				
+				#logo {
+					width: 130px;
+					padding: 20px 0;
+				}
+				h1 {
+					font-size: 30px;	
+				}
+				
+				h2 {
+					padding: 0 20px;
+					font-size: 16px;
+					line-height: normal;
+				}
+				
+					h2 i {
+						display: inline-block;
+						margin-top: 10px;
+					}
+				
+				form {
+					margin: 30px;
+				}
+				
+				input,
+				select {
+					margin-bottom: 10px;
+				}
+				
+				
+				#isa-holder,
+				#eis-holder {
+					margin-top: 0px;
+				}
+				
+				.isa-shares,
+				.eis-shares {
+					width: 90%;
+				}
+				
+				#isa-holder .arrow-up {
+					margin-left: 22%;	
+				}
+				#eis-holder .arrow-up {
+					margin-left: 74%;	
+				}
+				
+				
+				.column span {
+					font-size: 11px;
+					letter-spacing: 2px
+				}
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+		
+		<div class="wrapper">
+		
+			<div id="logo">
+				<div class="tm">TM</div>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85.95 85.35">
+					<path d="M85.79,38.78A42.79,42.79,0,0,0,40,.1,42.48,42.48,0,0,0,0,43.48C0.57,68.69,21.58,86.07,44.38,85.33A42.79,42.79,0,0,0,85.79,38.78ZM44.93,79.33c-21.1.86-38.24-14.74-39-35.53A36.83,36.83,0,0,1,41.52,5.63c19.94-.79,37.41,15.24,38.09,35C80.32,61.14,64.76,78.52,44.93,79.33Z"/>
+					<path d="M35.39,59.15c-1.23,1.53-2.1,3.14-3.42,4.13-1.74,1.3-3.75,2.68-5.8,3-4.42.74-7.74-2.53-8.66-7.83-1.06-6.08-.07-12,1.43-17.86,1-3.78,2.08-7.53,2.84-11.34,0.32-1.6-.12-3.35-0.23-5.21A8.21,8.21,0,0,1,30,25.6a4.52,4.52,0,0,1,1.08,5c-1.56,4.2-3.45,8.27-4.91,12.5-1.37,4-2.47,8.05-3.46,12.14a10.71,10.71,0,0,0,.12,4.37c0.42,2.2,2.08,3,3.8,1.66a11.73,11.73,0,0,0,3.83-4.83c2.3-6.56,4.33-13.24,6.21-19.94a67.36,67.36,0,0,0,1.59-9.26c0.23-1.69,1.46-2.17,2.7-2.62,1.45-.53,3.13-1,4.33.25a3.51,3.51,0,0,1,.4,2.8c-1.95,7.76-4,15.48-6,23.22C38.4,56,41,60.51,45.75,61.31c3.48,0.58,6.79,0,8.88-3.15s2.67-7,.55-10.53a21.45,21.45,0,0,0-3.25-3.76c-2.41-2.47-5.11-4.71-6-8.28-1-3.92,0-6.89,3.27-9.28,3.48-2.58,8.67-3,12-1a5.81,5.81,0,0,1,2.33,7.36,4.22,4.22,0,0,1-3.87,2.72c-2,.09-2.62-0.8-2.09-2.72a14,14,0,0,0,.62-3c0.1-2.15-1.49-3.28-3.57-2.67a4.51,4.51,0,0,0-2.38,7,24.82,24.82,0,0,0,3.73,4.1c2,1.93,4.21,3.6,6,5.67,5.86,6.75,4.4,15.39-3.33,19.89-5.19,3-10.8,3.43-16.55,2A8.68,8.68,0,0,1,35.39,59.15Z"/>
+					<path d="M63.79,35l3.63-2.36c-2.39-1.56-2.53-3.15-2.08-4.87a5.59,5.59,0,0,1,4.27-3.73c1.4-.11,2.53.44,2.58,1.92a8.52,8.52,0,0,1-.61,3.86c-1.31,2.7-3.73,4.32-6.39,5.56a3.08,3.08,0,0,1-1,.09Z"/>
+					<path d="M21.5,21l-3,3.51a3,3,0,0,1,1.92,4c-0.56,2-2.46,3.87-4.19,4s-2.68-.76-2.88-2.8C13,26.45,17.69,21.2,21.5,21Z"/>
+				</svg>
+			</div>
+			
+			<h1>We are stronger together.</h1>
+			<h2>Better off as a lender, better off as a borrower. <br><i>Simple!</i></h2>
+			
+			<?php if($_POST) { ?>
+				<h3 style="color: #c73516;">Thank you, see you soon...</h3>
+			<?php } else { ?>
+				<h3>Register your interest</h3>
+			<?php } ?>
+
+				<form action="index.php" method="post">
+					
+					<div class="row">
+					  <div class="col-xs-12 col-sm-5">
+					    <input type="text" name="email" class="form-control" placeholder="Email Address">
+					  </div>
+					  <div class="col-xs-12 col-sm-4">
+					    <select name="interest" class="form-control custom">
+						    <option value="LENDING">A Lender</option>
+						    <option value="SHAREHOLDING">A Shareholder</option>
+						    <option value="BOTH">Both</option>
+					    </select>
+					  </div>
+					  <div class="col-xs-12 col-sm-3">
+					    <button class="btn" type="submit">Subscribe</button>
+					  </div>
+					</div>
+					
+				</form>
+			<div class="img-holder">
+				<div id="box-1"></div>
+				<div id="box-2"></div>
+				<img src="img/buckets.png" alt="Just Us Buckets">
+			</div>
+			
+			
+			<div id="isa-holder">
+				<div class="arrow-up"></div>
+				<div class="isa-shares">
+					<div class="column">
+						<span>1 Year</span>
+						UPTO 7%<br>
+						<span>RETURN</span>
+					</div>
+					<div class="column">
+						<span>3 Years</span>
+						UPTO 8%<br>
+						<span>RETURN</span>
+					</div>
+					<div class="column">
+						<span>5 Years</span>
+						UPTO 9%<br>
+						<span>RETURN</span>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div id="eis-holder">
+				<div class="arrow-up"></div>
+				<div class="eis-shares">
+					We will be offering shares in Us to the crowd via a crowdfunding platform in May 2016. The shares have been approved for EIS Tax Relief and will be available to registered interested parties 24 hours before being made available to the public.
+				</div>
+			</div>
+			
+			<p class="footer-txt">Us is an electronic system in relation to lending. Us is a trading style of eMoneyHub Ltd. Authorised and regulated by the Financial Conduct Authority. eMoneyHub Ltd is registered with the Office of Information Commissioner No. Z3292835. Peer to Peer Lending via the Us electronic system is NOT covered by the Financial Services Compensation Scheme. Registered Office: 28B London Road Alderley Edge Cheshire SK9 7DZ Company Number 08158588.</p>
+	
+			<p class="footer-txt">Any enquiries email <a href="mailto:support@justus.co">support@justus.co</a></p>
+			
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script>
+		  $(function() {
+			  $('#box-1').click(function() {
+				  $('#isa-holder').fadeIn(.2);
+				  $('#eis-holder').fadeOut(0);
+			  });
+			  
+			  $('#box-2').click(function() {
+				  $('#isa-holder').fadeOut(0);
+				  $('#eis-holder').fadeIn(1);
+			  });
+		  	
+		  })
+			
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-75440900-1', 'auto');
+		  ga('send', 'pageview'); 
+		</script>
+		
+	</body>
+	
+</html>

@@ -1,3 +1,10 @@
+body .form-control {
+  border-radius: 0; }
+body input[type="submit"] {
+  border: none;
+  background: #ff9501;
+  color: #fff;
+  font-weight: bold; }
 body h1 {
   font-size: 38px;
   font-weight: 600; }
@@ -10,8 +17,8 @@ body h3 {
 body p {
   font-size: 14px; }
 body p.intro-txt {
-  font-size: 22px !important;
-  color: #ff9501; }
+  font-size: 20px !important;
+  color: #666; }
 body a {
   color: #ff9501; }
 body a:hover {
@@ -22,9 +29,9 @@ body .btn {
   border-radius: 0px;
   color: #fff;
   text-transform: uppercase;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 600;
-  padding: 10px 35px;
+  padding: 10px 25px;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s; }
@@ -52,33 +59,60 @@ body header {
   position: fixed;
   background: #fff;
   width: 100%;
-  z-index: 9999;
-  background-color: #fff;
-  background-image: -webkit-linear-gradient(#fff, #f1f1f1);
-  background-image: linear-gradient(#fff, #f1f1f1); }
+  z-index: 9999; }
   body header #logo a {
     display: inline-block;
-    margin: 20px 0;
+    margin: 15px 0;
     float: left;
-    width: 133px;
-    height: 55px;
+    width: 120px;
+    height: 50px;
     background: url("../images/logo.png");
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s; }
   body header #topper-nav {
     float: left; }
   body header .nav {
-    margin: 20px 0;
+    margin: 15px 0;
     float: left; }
     body header .nav a {
       font-size: 16px;
-      font-weight: 600; }
+      font-weight: 400;
+      color: #666;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      transition: 0.3s; }
+  body header .nav > li > a:focus, body header .nav > li > a:hover {
+    background: none; }
   body header .home-side {
     float: right;
     margin: 20px 0;
     font-size: 16px;
-    font-weight: 600; }
+    font-weight: 600;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s; }
     body header .home-side .btn {
-      margin-left: 10px; }
+      margin-left: 10px;
+      padding: 5px 10px; }
+body header.mini-me .nav {
+  margin: 10px 0; }
+body header.mini-me .navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 0;
+  font-size: 14px; }
+body header.mini-me .home-side {
+  margin-top: 10px;
+  margin-bottom: 0px; }
+  body header.mini-me .home-side .btn {
+    margin-left: 10px;
+    padding: 5px 10px; }
+body header.mini-me #logo a {
+  margin: 10px 0;
+  width: 100px;
+  height: 40px; }
 body #hero-banner {
   overflow: hidden;
   padding: 235px 0 185px 0;
@@ -180,22 +214,27 @@ body #how-it-works {
     padding-top: 25px;
     -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1) !important;
     -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1) !important;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1) !important; }
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1) !important;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s; }
     body #how-it-works figure i {
-      margin: 0 auto;
+      color: #ff9501;
+      font-size: 50px;
       margin-bottom: 25px;
-      width: 80px;
-      height: 80px;
-      background: #f3f3f3;
-      display: block;
-      -moz-border-radius: 100px;
-      -webkit-border-radius: 100px;
-      border-radius: 100px; }
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s; }
     body #how-it-works figure figcaption {
       padding: 20px;
       font-weight: 600;
       border-top: 1px solid #f1f1f1;
       font-size: 17px; }
+  body #how-it-works figure:hover {
+    background: #ff9501;
+    color: #fff; }
+    body #how-it-works figure:hover i {
+      color: #fff; }
 body section#lifestyle-strip div {
   padding: 0;
   margin: 0; }
@@ -237,7 +276,7 @@ body #news-blog {
     body #news-blog article a:hover {
       color: #fff; }
 body .footer-nav {
-  padding: 50px 0;
+  padding: 20px 0;
   clear: both; }
   body .footer-nav h4 {
     font-weight: 600; }
@@ -247,11 +286,15 @@ body .footer-nav {
     margin: 0; }
   body .footer-nav a {
     font-size: 13px; }
+  body .footer-nav form .btn {
+    padding: 8px 20px;
+    font-size: 12px; }
 body footer {
-  padding: 35px 0;
-  background: #ff9501; }
+  padding: 20px 0 10px 0;
+  background: #ff9501;
+  font-size: 12px; }
   body footer p {
-    font-size: 13px; }
+    font-size: 12px; }
   body footer a {
     color: #fff; }
   body footer a:hover {
@@ -261,6 +304,8 @@ body footer {
     margin-right: 10px;
     border-right: 3px solid #fff !important; }
 
+body.content-page .address-text {
+  margin-top: 20px; }
 body.content-page .main-content {
   margin-bottom: 40px; }
   body.content-page .main-content p {
@@ -274,7 +319,22 @@ body.content-page .main-content {
   body.content-page .main-content h6 {
     font-size: 16px; }
   body.content-page .main-content .tab-pane {
-    padding: 20px; }
+    padding-top: 20px; }
+    body.content-page .main-content .tab-pane .panel {
+      border: none;
+      border-bottom: 2px solid #f3f3f3;
+      border-radius: 0;
+      box-shadow: none; }
+    body.content-page .main-content .tab-pane .panel-default > .panel-heading {
+      background: none;
+      border: none;
+      padding: 10px 0; }
+      body.content-page .main-content .tab-pane .panel-default > .panel-heading h4 {
+        font-size: 15px; }
+        body.content-page .main-content .tab-pane .panel-default > .panel-heading h4 a {
+          color: #ff9501; }
+        body.content-page .main-content .tab-pane .panel-default > .panel-heading h4 a.collapsed {
+          color: #666; }
 body.content-page section#intro-box {
   position: relative;
   padding: 200px 0 150px 0;
@@ -341,3 +401,25 @@ body.content-page .social-share {
     fill: #ff9501; }
 body.content-page .thumb img {
   margin-bottom: 30px; }
+
+@media screen and (max-width: 767px) {
+  body #hero-banner {
+    padding: 235px 0 20px 0; }
+    body #hero-banner h1 {
+      font-size: 20px; }
+    body #hero-banner p {
+      width: inherit;
+      font-size: 17px; }
+  body #mfw-gateway .process-path a.holder {
+    height: 190px; }
+  body #mfw-gateway img {
+    width: 100%; } }
+@media screen and (max-width: 1200px) {
+  body #mfw-gateway h2 {
+    font-size: 20px;
+    width: inherit; }
+  body #mfw-gateway img {
+    width: auto; } }
+@media screen and (max-width: 800px) {
+  body #mfw-gateway img {
+    width: 100%; } }

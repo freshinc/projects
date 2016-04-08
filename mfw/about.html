@@ -2,8 +2,12 @@
 <html>
   <head>
     <title>myfotowall</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="styles/styles.css" rel="stylesheet"/>
+    <link href="./css/styles.css" rel="stylesheet"/>
+    <link href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css" rel="stylesheet"/>
+    <link href="./css/bootstrap-image-gallery.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
   </head>
   <body class="content-page">
     <header>
@@ -32,7 +36,7 @@
     <section id="intro-box">
       <h1><span>About us</span></h1>
       <div class="img-filter"></div>
-      <div class="img-place-holder"><img src="./images/stock.jpg"/></div>
+      <div class="img-place-holder"><img src="./images/backgrounds/cliffs.jpg"/></div>
     </section>
     <section class="container">
       <h2>All about myfotowall
@@ -44,24 +48,27 @@
               <path d="M15.117 0H.883C.395 0 0 .395 0 .883v14.234c0 .488.395.883.883.883h7.663V9.804H6.46V7.39h2.086V5.607c0-2.066 1.262-3.19 3.106-3.19.883 0 1.642.064 1.863.094v2.16h-1.28c-1 0-1.195.476-1.195 1.176v1.54h2.39l-.31 2.416h-2.08V16h4.077c.488 0 .883-.395.883-.883V.883C16 .395 15.605 0 15.117 0" fill-rule="nonzero"></path>
             </svg></a></div>
       </h2>
-      <div class="main-content">
-        <p class="intro-txt">myfotowall has been created to give everyone the ability to create something really amazing with a digital photograph by converting it into a life size photo-wall covering, that can change the look and feel of any room, creating a lasting and dynamic wall scape of your photograph.</p>
-        <p>There are millions and millions of digital photographs that are being taken, every hour, of every day throughout the world and every now and then, we all take that perfect photo that deserves to be more than just another image, in your image library.</p>
-        <p>myfotowall is at the forefront of this next generation of websites that engages the imagination and creativeness of the website visitor. Our style of website is called a 'User Participation Website' (UPW for short) allowing you to interact and control the functionality of the website as if it were an application on your desktop PC.</p>
+      <div class="main-content row">
+        <div class="col-md-6">
+          <p class="intro-txt">myfotowall has been created to give everyone the ability to create something really amazing with a digital photograph by converting it into a life size photo-wall covering, that can change the look and feel of any room, creating a lasting and dynamic wall scape of your photograph.</p>
+          <p>There are millions and millions of digital photographs that are being taken, every hour, of every day throughout the world and every now and then, we all take that perfect photo that deserves to be more than just another image, in your image library.</p>
+          <p>myfotowall is at the forefront of this next generation of websites that engages the imagination and creativeness of the website visitor. Our style of website is called a 'User Participation Website' (UPW for short) allowing you to interact and control the functionality of the website as if it were an application on your desktop PC.</p>
+        </div>
+        <div class="col-md-6"><img src="./images/bgs/photo-1458324124043-7803d4fec380.jpg" class="img-responsive"/></div>
       </div>
     </section>
     <section id="mfw-sectors" class="container">
-      <div class="mfw-sector col-md-4"><a href="http://app.myfotowall.com/"><img src="images/home.jpg" class="img-responsive"/></a>
+      <div class="mfw-sector col-md-4 col-sm-6"><a href="http://app.myfotowall.com/"><img src="images/home.jpg" class="img-responsive"/></a>
         <h3>myfotowall for  <span class="orange">you</span></h3>
         <p>Nam lectus mauris, dapibus et fringilla nec, lacinia id magna. Nunc id hendrerit nunc, eget scelerisque felis.</p>
         <p><a href="http://app.myfotowall.com/">Find out more...</a></p>
       </div>
-      <div class="mfw-sector col-md-4"><a href="business.html"><img src="images/show-room.jpg" class="img-responsive"/></a>
+      <div class="mfw-sector col-md-4 col-sm-6"><a href="business.html"><img src="images/show-room.jpg" class="img-responsive"/></a>
         <h3>myfotowall for <span class="orange">business</span></h3>
         <p>Nam lectus mauris, dapibus et fringilla nec, lacinia id magna. Nunc id hendrerit nunc, eget scelerisque felis.</p>
         <p><a href="business.html">Find out more...</a></p>
       </div>
-      <div class="mfw-sector col-md-4"><a href="bespoke.html"><img src="images/pool.jpg" class="img-responsive"/></a>
+      <div class="mfw-sector col-md-4 col-sm-6"><a href="bespoke.html"><img src="images/pool.jpg" class="img-responsive"/></a>
         <h3>myfotowall <span class="orange">bespoke</span></h3>
         <p>
           <Nam>lectus mauris, dapibus et fringilla nec, lacinia id magna. Nunc id hendrerit nunc, eget scelerisque felis.</Nam>
@@ -96,7 +103,12 @@
       <div class="col-md-6">
         <h4>Keep informed</h4>
         <p>We appreciate your interest in myfotowall and would like to keep you in the picture, about what's new, exciting projects and ideas we can share.</p>
-        <p>[email-form]</p>
+        <form class="form-inline maillist">
+          <div class="form-group">
+            <input id="maillist-email" type="email" placeholder="you@where.com" class="form-control"/>
+          </div>
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
       </div>
     </section>
     <footer>
@@ -111,5 +123,7 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="./scripts/mfw-core.js"></script>
   </body>
 </html>

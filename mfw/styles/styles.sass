@@ -4,6 +4,7 @@ $mfw-orange : #ff9501
 $mfw-black : #000
 $mfw-white : #fff
 $mfw-grey : #f3f3f3
+$mfw-dark-grey : #666
 
 =absolute-all()
   position: absolute
@@ -29,6 +30,17 @@ $mfw-grey : #f3f3f3
 
 body
 
+  .form-control
+    border-radius: 0
+
+  input
+    &[type="submit"]
+      border: none
+      background: $mfw-orange
+      color: $mfw-white
+      font-weight: bold
+      
+
   h1
     font-size: 38px
     font-weight: 600
@@ -45,8 +57,8 @@ body
     font-size: 14px
     
   p.intro-txt
-    font-size: 22px !important
-    color: $mfw-orange
+    font-size: 20px !important
+    color: $mfw-dark-grey
 
   a
     color: $mfw-orange
@@ -60,9 +72,9 @@ body
     border-radius: 0px
     color: $mfw-white
     text-transform: uppercase
-    font-size: 17px
+    font-size: 15px
     font-weight: 600
-    padding: 10px 35px
+    padding: 10px 25px
     +transition(all .5s)
     
   .btn:hover
@@ -99,38 +111,69 @@ body
     background: $mfw-white
     width: 100%
     z-index: 9999
-    @include linear-gradient(#fff, #f1f1f1)
+    //@include linear-gradient(#fff, #f1f1f1)
   
     #logo
       a
         display: inline-block
-        margin: 20px 0
+        margin: 15px 0
         float: left
-        width: 133px
-        height: 55px
+        width: 120px
+        height: 50px
         background: url('../images/logo.png')
         background-repeat: no-repeat
+        background-size: cover
+        @include transition(0.3s)
 
     #topper-nav
       float: left
 
     .nav
-      margin: 20px 0
+      margin: 15px 0
       float: left
-
       a
         font-size: 16px
-        font-weight: 600
+        font-weight: 400
+        color: $mfw-dark-grey
+        @include transition(0.3s)
         
+    .nav>li>a:focus, .nav>li>a:hover
+      background: none
+      
     .home-side
       float: right
       margin: 20px 0
       font-size: 16px
       font-weight: 600
+      @include transition(0.3s)
             
       .btn
         margin-left: 10px
+        padding: 5px 10px
+        
+  header.mini-me
+    .nav
+      margin: 10px 0
+    
+    .navbar-nav>li>a
+      padding-top: 10px
+      padding-bottom: 0
+      font-size: 14px
+  
+    .home-side
+      margin-top: 10px
+      margin-bottom: 0px
       
+      .btn
+        margin-left: 10px
+        padding: 5px 10px
+        
+    #logo
+      a
+        margin: 10px 0
+        width: 100px
+        height: 40px
+        
       
   
   //
@@ -260,15 +303,13 @@ body
       margin: 0 20px
       padding-top: 25px
       +box-shadow()
+      @include transition(all .3s)
   
       i
-        margin: 0 auto
+        color: $mfw-orange
+        font-size: 50px
         margin-bottom: 25px
-        width: 80px
-        height: 80px
-        background: $mfw-grey
-        display: block
-        +border-radius(100px)
+        @include transition(all .3s)
     
       figcaption
         padding: 20px
@@ -276,6 +317,12 @@ body
         border-top: 1px solid #f1f1f1
         font-size: 17px
   
+    figure:hover
+      background: $mfw-orange
+      color: $mfw-white
+      
+      i
+        color: $mfw-white
   
   
   //
@@ -350,7 +397,7 @@ body
   //
   
   .footer-nav
-    padding: 50px 0
+    padding: 20px 0
     clear: both
     
     h4
@@ -363,13 +410,19 @@ body
     
     a
       font-size: 13px
+      
+    form
+      .btn
+        padding: 8px 20px
+        font-size: 12px
   
   footer
-    padding: 35px 0
+    padding: 20px 0 10px 0
     background: $mfw-orange
+    font-size: 12px
     
     p
-      font-size: 13px
+      font-size: 12px
     
     a
       color: $mfw-white
@@ -392,6 +445,9 @@ body
 
 body.content-page
 
+  .address-text
+    margin-top: 20px
+
   .main-content
     margin-bottom: 40px
     
@@ -412,7 +468,28 @@ body.content-page
       
       
     .tab-pane
-      padding: 20px
+      padding-top: 20px
+      
+      .panel
+        border: none
+        border-bottom:  2px solid $mfw-grey
+        border-radius: 0
+        box-shadow: none
+      
+      .panel-default>.panel-heading
+        background: none
+        border: none
+        padding: 10px 0
+        
+        
+        h4
+          font-size: 15px
+          
+          a
+            color: $mfw-orange
+            
+          a.collapsed
+            color: $mfw-dark-grey
   
   section#intro-box
     position: relative
@@ -486,5 +563,52 @@ body.content-page
   .thumb
     img
       margin-bottom: 30px
+      
+      
+@media screen and (max-width: 767px)
 
+  body
+    
+    #hero-banner
+      padding: 235px 0 20px 0
+      
+      h1
+        font-size: 20px
+        
+      p
+        width: inherit
+        font-size: 17px  
 
+    #mfw-gateway
+        
+      .process-path
+      
+        a.holder
+          height: 190px
+      
+      img
+        width: 100%
+          
+
+@media screen and (max-width: 1200px)
+
+  body
+
+    #mfw-gateway
+
+      h2
+        font-size: 20px
+        width: inherit
+      
+      img
+        width: auto
+        
+
+@media screen and (max-width: 800px)
+
+  body
+
+    #mfw-gateway
+      
+      img
+        width: 100%
